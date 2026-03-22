@@ -1,14 +1,36 @@
 <img width=100% src= "https://capsule-render.vercel.app/api?type=waving&color=E6E6FA&height=120&section=header"/>
 
-```javascript
-const aboutMe = {
-  name: "Clara Mendes",
-  role: ["DevOps Engineer"],
-  mySkills: ["AWS","Docker", "Kubernetes", "Linux administration", "Shell Script", "Terraform", "Grafana"],
-  interests: ["reading","cloud", "cybersecurity", "gastronomy", "music"]
-};
+```hcl
+locals {
+  engineer_profile = {
+    name        = "Clara Mendes"
+    title       = "Junior DevOps Engineer"
+    location    = "Brazil 🇧🇷"
 
-console.log(aboutMe);
+    expertise = {
+      cloud            = ["AWS"]
+      containers       = ["Docker", "Kubernetes"]
+      infrastructure   = ["Terraform", "Infrastructure as Code"]
+      systems          = ["Linux Administration"]
+      automation       = ["Shell Script"]
+      observability    = ["Grafana"]
+    }
+
+    interests = [
+      "Cloud Computing ☁️",
+      "Cybersecurity 🔐",
+      "Automation ⚙️",
+      "Music 🎵",
+      "Gastronomy 🍝"
+    ]
+
+    mindset = "Everything is worthwhile when the soul is not small."
+  }
+}
+
+output "devops_engineer_profile" {
+  value = local.engineer_profile
+}
 ```
 
 <div align="rigth">  
