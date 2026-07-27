@@ -24,7 +24,7 @@ locals {
       "Gastronomy 🍝"
     ]
 
-    mindset = "Everything is worthwhile when the soul is not small."
+    "Everything is worthwhile when the soul is not small."
   }
 }
 
