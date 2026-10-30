@@ -28,7 +28,7 @@ locals {
   }
 }
 
-output "devops_engineer_profile" {
+output "clara's_profile" {
   value = local.engineer_profile
 }
 ```
