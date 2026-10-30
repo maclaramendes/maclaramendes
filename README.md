@@ -4,7 +4,7 @@
 locals {
   engineer_profile = {
     name        = "Clara Mendes"
-    title       = "Junior DevOps Engineer"
+    title       = "SRE and Cloud Engineer"
     location    = "Brazil 🇧🇷"
 
     expertise = {
